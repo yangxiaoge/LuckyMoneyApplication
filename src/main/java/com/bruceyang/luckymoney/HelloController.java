@@ -1,10 +1,8 @@
 package com.bruceyang.luckymoney;
 
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.math.BigDecimal;
 
 /**
  * Created by yangxiaoge
@@ -12,14 +10,12 @@ import java.math.BigDecimal;
  */
 @RestController
 public class HelloController {
-    //获取配置文件application中的minMoney
-    @Value("${minMoney}")
-    private BigDecimal minMoney;
-    @Value("${description}")
-    private  String description;
+    //获取配置文件application中的limit
+    @Autowired
+    private LimitConfig limitConfig;
 
     @GetMapping("/hello")
     public String sayHello() {
-        return "minMoney: " + minMoney + " ，"+description;
+        return "说明: " + limitConfig.getDescription();
     }
 }
