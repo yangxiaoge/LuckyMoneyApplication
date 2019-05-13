@@ -1,5 +1,11 @@
 # SprignBoot 发红包后台服务
 
+### Controller使用
+![](doc/controller1.png)
+![](doc/controller2.png)
+
+
+### 服务打包启动
 1, mvn打包
 ```
 mvn clean package
