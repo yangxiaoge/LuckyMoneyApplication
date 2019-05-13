@@ -3,6 +3,6 @@ server:
   servlet:
     context-path: /luckymoney
 limit:
-  minMoney: 1
+  minMoney: 0.01
   maxMoney: 200
   description: 最少要发${limit.minMoney}元，最多能发${limit.maxMoney}元
