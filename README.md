@@ -7,6 +7,9 @@
 ### LuckymoneyController接口
 ![](doc/restful.png)
 
+### 学习顺序
+![](doc/springboot学习顺序.jpg)
+
 ### 服务打包启动
 1, mvn打包
 ```
