@@ -4,6 +4,8 @@
 ![](doc/controller1.png)
 ![](doc/controller2.png)
 
+### LuckymoneyController接口
+![](doc/restful.png)
 
 ### 服务打包启动
 1, mvn打包
