@@ -66,7 +66,7 @@ public class LuckymoneyController {
     }
 
     @PostMapping("/luckymoneys/two")
-    public void createTwo(){
-        service.createTwo();
+    public List<Luckymoney> createTwo(){
+       return service.createTwo();
     }
 }
